@@ -1,5 +1,6 @@
 // Filename: index.js
 // Combined code from all files
+
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet, ScrollView, View, Text, Button, ActivityIndicator } from 'react-native';
 import axios from 'axios';
@@ -31,7 +32,7 @@ export default function App() {
         <SafeAreaView style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollView}>
                 {loading ? (
-                    <ActivityIndicator size="large" color="#0000ff" />
+                    <ActivityIndicator size="large" color="#ffffff" />
                 ) : (
                     <View style={styles.box}>
                         <Text style={styles.title}>{message}</Text>
@@ -52,6 +53,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginTop: 30,
+        backgroundColor: '#333333', // Dark background color
     },
     scrollView: {
         alignItems: 'center',
@@ -70,9 +72,11 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         marginBottom: 10,
+        color: '#FFFFFF', // White text color for title
     },
     subTitle: {
         fontSize: 16,
         marginBottom: 20,
+        color: '#FFFFFF', // White text color for subtitle
     }
 });
