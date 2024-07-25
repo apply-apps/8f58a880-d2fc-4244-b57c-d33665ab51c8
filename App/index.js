@@ -1,6 +1,5 @@
 // Filename: index.js
 // Combined code from all files
-
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet, ScrollView, View, Text, Button, ActivityIndicator } from 'react-native';
 import axios from 'axios';
